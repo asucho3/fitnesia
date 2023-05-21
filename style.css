@@ -238,10 +238,12 @@ strong {
 
 .btn:hover {
   background-color: var(--main-bg-color);
+  color: #fff;
 }
 
 .btn--full:hover {
   background-color: #003d69;
+  color: #fff;
 }
 
 /* FEATURES */
@@ -613,6 +615,7 @@ strong {
 }
 
 /* CTA */
+
 .section-cta {
   scroll-margin: 20rem;
 }
@@ -711,7 +714,6 @@ strong {
 
 /* Newsletter */
 
-/* CTA */
 .newsletter-container {
   margin: 8.6rem auto 0 auto;
   display: grid;
@@ -732,12 +734,12 @@ strong {
   column-gap: 1.6rem;
   row-gap: 1.6rem;
   align-items: center;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 2.4rem 3.6rem 2.4rem;
 }
 
 .newsletter-header {
   font-size: 3rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 3.6rem 2.4rem 0 2.4rem;
 }
 
 .newsletter-form--button {
@@ -783,6 +785,8 @@ strong {
   display: block;
   width: 100%;
 }
+
+/* Footer */
 
 .footer {
   margin-top: 11.6rem;
@@ -856,10 +860,21 @@ strong {
   html {
     font-size: 50%;
   }
+  .header {
+    position: relative;
+  }
   .nav-links {
+    position: absolute;
+    flex-direction: column;
+
     visibility: hidden;
-    pointer-events: none;
     opacity: 0;
+    pointer-events: none;
+
+    height: 50vh;
+    right: 0%;
+    top: 8rem;
+    padding: 8rem 0;
   }
   .toggleMenu {
     display: block;
@@ -870,20 +885,25 @@ strong {
     transform: translate(-50%, -50%);
   }
   .header.visible .nav-links {
-    transition: all 0.3s;
+    flex-direction: column;
+    position: absolute;
+
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-    flex-direction: column;
-    position: absolute;
+
     left: 50%;
     top: 8rem;
+    height: 50vh;
     transform: translateX(-50%);
-    padding: 8rem 0;
+    padding: 4rem 0;
+
     background-color: #fff;
     width: 100vw;
     backdrop-filter: blur(3px);
     background-color: #ffffffb0;
+
+    transition: all 0.3s;
   }
   .hero-container {
     width: 100%;
@@ -976,7 +996,8 @@ strong {
   }
   .newsletter-container {
     grid-template-columns: 1fr;
-    width: 95%;
+    width: 100%;
+    padding: 2rem 0;
   }
   .newsletter-form {
     display: flex;
