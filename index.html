@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Fitnesia is an AI-powered fitness tracking service that will boost your health and get you in shape quickly." />
   <title>Fitnesia</title>
   <link href="/style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +21,9 @@
 </head>
 
 <body>
-  <ion-icon name="menu-outline" class="toggleMenu"></ion-icon>
   <header class="header">
-    <a href="#"><img class="logo" src="/img/logo.png" /></a>
+    <ion-icon name="menu-outline" class="toggleMenu"></ion-icon>
+    <a href="#"><img class="logo" src="/img/logo.png" alt="Fitnesia logo" /></a>
     <ul class="nav-links">
       <li class="nav-link" href=".section-features">Features</li>
       <li class="nav-link" href=".section-how">How it works</li>
@@ -44,7 +46,7 @@
           <li class="btn">Learn more</li>
         </ul>
       </div>
-      <div class="hero-img"></div>
+      <div class="hero-img" role="img" aria-label="Photo of a person stretching"></div>
     </div>
   </section>
   <section class="section-features">
@@ -84,7 +86,7 @@
           AI-powered technology will generate the ideal workout for you.
         </div>
       </div>
-      <img class="how-img" src="/img/img1.jpg" />
+      <img class="how-img" src="/img/img1.jpg" alt="Photo of a person performing pulling exercises" />
     </div>
     <div class="how">
       <div class="how-content">
@@ -94,7 +96,7 @@
           and real-time achievement generation to help you stay motivated.
         </div>
       </div>
-      <img class="how-img" src="/img/img3.jpg" />
+      <img class="how-img" src="/img/img3.jpg" alt="Photo of a group of people exercising" />
     </div>
     <div class="how">
       <div class="how-content">
@@ -104,7 +106,7 @@
           market.
         </div>
       </div>
-      <img class="how-img" src="/img/img5.jpg" />
+      <img class="how-img" src="/img/img5.jpg" alt="Photo of a person lifting weights" />
     </div>
   </section>
   <section class="section-workouts">
@@ -186,25 +188,24 @@
       <div><ion-icon name="chevron-back-outline" class="move previous"></ion-icon></div>
       <div class="testimonial" data-code="0">
         <div class="testimonial-text">"I've been using this app for just a few weeks, and I'm already seeing incredible
-          results! The performance tracking feature has been a game-changer for me, and I love the personalized workout
-          plans. This app has everything I need to stay motivated and on track towards my fitness goals."<br><br>- Jane
+          results! The performance tracking feature has been a game-changer for me."<br><br>- Jane
           Doe</div>
 
-        <img class="testimonial-photo" src="/img/customers/jane.jpg">
+        <img class="testimonial-photo" src="/img/customers/jane.jpg" alt="Photo of customer Jane Doe">
 
       </div>
       <div class="testimonial" data-code="1">
         <div class="testimonial-text">"I never thought tracking my fitness could be so much fun! The virtual reality
-          fitness classes are amazing - it's like I'm actually in the gym with my trainer." "<br><br>- John Smith</div>
+          fitness classes are amazing - it's like I'm actually in the gym with my trainer."<br><br>- John Smith</div>
 
-        <img class="testimonial-photo" src="/img/customers/john.jpg">
+        <img class="testimonial-photo" src="/img/customers/john.jpg" alt="Photo of customer John Smith">
 
       </div>
       <div class="testimonial" data-code="2">
         <div class="testimonial-text">"As a busy professional, I don't have a lot of time to spend at the gym. But with
           this app, I can get a great workout in no matter where I am."<br><br>- Sarah Lee</div>
 
-        <img class="testimonial-photo" src="/img/customers/sarah.jpg">
+        <img class="testimonial-photo" src="/img/customers/sarah.jpg" alt="Photo of customer Sarah Lee">
 
       </div>
       <div><ion-icon name="chevron-forward-outline" class="move next"></ion-icon></div>
@@ -262,11 +263,11 @@
           With features like personalized workout plans, progress tracking, and real-time feedback, you'll have
           everything you need to stay motivated and achieve the results you want
           <div class="cta-buttons">
-            <a class="btn btn--full">Start now!</a>
+            <span class="btn btn--full">Start now!</span>
           </div>
         </div>
       </div>
-      <div class="cta-img"></div>
+      <div class="cta-img" role="img" aria-label="Photo of a person getting ready to run"></div>
     </div>
   </section>
   <section class="section-faq">
@@ -297,7 +298,7 @@
   </section>
   <section class="section-newsletter">
     <div class="newsletter-container">
-      <div class="newsletter-img"></div>
+      <div class="newsletter-img" role="img" aria-label="Photo of a person tying his running shoes"></div>
       <div class="newsletter-header">
         Be the first to know about new features, special discounts and more
       </div>
@@ -328,7 +329,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-first">
-        <div href="#"><img class="logo" src="/img/logo.png" /></div>
+        <div href="#"><img class="logo" src="/img/logo.png" alt="Fitnesia logo" /></div>
       </div>
       <div class="footer-second">
         <div class="social-links"><ion-icon name="logo-twitter"></ion-icon><ion-icon
