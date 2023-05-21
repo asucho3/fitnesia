@@ -239,7 +239,7 @@ strong {
 
 .btn:hover {
   background-color: var(--main-bg-color);
-  color: #fff;
+  color: #111;
 }
 
 .btn--full:hover {
@@ -863,10 +863,6 @@ strong {
   }
   .header {
     position: relative;
-    overflow-x: hidden;
-  }
-  .header.visible {
-    overflow-x: visible;
   }
   .toggleMenu {
     display: block;
@@ -885,10 +881,13 @@ strong {
     opacity: 0;
     pointer-events: none;
 
-    right: -20%;
-    top: 8rem;
+    right: 50%;
+    transform: translateX(50%);
 
+    gap: 4rem;
+    top: 8rem;
     width: 100%;
+
     padding: 4rem 0;
   }
   .header.visible .nav-links {
@@ -899,30 +898,43 @@ strong {
     opacity: 1;
     pointer-events: auto;
 
-    right: 50%;
-    transform: translateX(50%);
-
-    padding: 4rem 0;
+    top: 8rem;
+    height: 100vh;
 
     background-color: #fff;
     backdrop-filter: blur(3px);
-    background-color: #ffffffb0;
+    background-color: #ffffffe5;
 
     transition: all 0.3s;
   }
+  .nav-link,
+  .nav-links .btn {
+    transform: translateX(2rem);
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .header.visible .nav-link,
+  .header.visible .nav-links .btn {
+    transform: translateX(0);
+  }
   .hero-container {
+    grid-template-columns: 3fr 1fr;
     width: 100%;
     padding: 0 0 0 2.4rem;
   }
   .hero-heading {
-    font-size: 3rem;
+    font-size: 5.2rem;
     width: 100%;
   }
   .hero-textbox {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   .hero-buttons {
     flex-direction: column;
+    align-items: start;
+  }
+  .hero-buttons .btn.btn--full {
+    font-size: 3.6rem;
   }
   .feature-container {
     padding: 1rem;
