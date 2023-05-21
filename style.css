@@ -251,7 +251,7 @@ strong {
 
 .section-features {
   margin-top: 8.6rem;
-  scroll-margin: 20rem;
+  scroll-margin: 10rem;
 }
 
 .feature-container {
@@ -304,8 +304,14 @@ strong {
   padding: 2.4rem;
   flex-direction: column;
   margin: 8.6rem auto 0 auto;
-  gap: 0rem;
+  gap: 2.4rem;
   scroll-margin: 10rem;
+}
+
+.how-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
 }
 
 .how {
@@ -365,7 +371,7 @@ strong {
   flex-direction: column;
   margin: 8.6rem auto 0 auto;
   gap: 2.4rem;
-  scroll-margin: 20rem;
+  scroll-margin: 10rem;
 }
 
 .workout {
@@ -508,7 +514,7 @@ strong {
   width: 65%;
   gap: 2.4rem;
   justify-content: center;
-  scroll-margin: 20rem;
+  scroll-margin: 10rem;
 }
 
 .pricing-container {
@@ -618,7 +624,7 @@ strong {
 /* CTA */
 
 .section-cta {
-  scroll-margin: 20rem;
+  scroll-margin: 10rem;
 }
 
 .cta-container {
@@ -672,7 +678,7 @@ strong {
   width: 65%;
   gap: 2.4rem;
   justify-content: center;
-  scroll-margin: 20rem;
+  scroll-margin: 10rem;
 }
 
 .faq-container {
@@ -899,7 +905,7 @@ strong {
     pointer-events: auto;
 
     top: 8rem;
-    height: 100vh;
+    height: 75vh;
 
     background-color: #fff;
     backdrop-filter: blur(3px);
