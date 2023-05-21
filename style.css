@@ -948,7 +948,7 @@ strong {
   }
   .section-how {
     width: 100%;
-    gap: 1rem;
+    gap: 2.4rem;
   }
   .how {
     display: flex;
@@ -959,14 +959,14 @@ strong {
   }
   .section-workouts {
     width: 100%;
-    padding: 1.6rem;
+    padding: 2.4rem;
   }
   .workouts-container {
-    gap: 1rem;
+    gap: 2rem;
     flex-direction: column;
   }
   .workout {
-    width: 75%;
+    width: 100%;
   }
   .testimonial-container {
   }
@@ -995,7 +995,8 @@ strong {
     transform: translate(0, -50%);
   }
   .section-pricing {
-    width: 85%;
+    width: 100%;
+    padding: 2.4rem;
   }
   .pricing-container {
     width: 100%;
@@ -1010,22 +1011,33 @@ strong {
     grid-row: span 3;
     padding: 3.6rem 1rem;
   }
+  .pricing-plan--title {
+    font-size: 2.4rem;
+    letter-spacing: 0.075rem;
+  }
+  .pricing-plan--price span {
+    font-size: 4rem;
+  }
   .cta-container {
     grid-template-columns: 1fr;
     width: 90%;
   }
   .section-faq {
-    width: 90%;
+    width: 100%;
+    padding: 2.4rem;
   }
   .newsletter-container {
     grid-template-columns: 1fr;
     width: 100%;
     padding: 2rem 0;
   }
+  .newsletter-header {
+    padding-bottom: 2rem;
+  }
   .newsletter-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
   .newsletter-form div {
     width: 100%;
