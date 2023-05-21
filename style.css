@@ -577,7 +577,7 @@ strong {
 }
 
 .pricing-plan.full {
-  background-color: #303030;
+  background-image: linear-gradient(to bottom right, #202020, #3b3b3b);
   color: #fff;
   grid-column: span 4;
 }
