@@ -109,10 +109,12 @@ const hero = document.querySelector('.section-hero');
 const stickyNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
+    console.log(entry);
     hero.style.marginTop = `${header.getBoundingClientRect().height}px`;
     header.classList.add('sticky');
   }
   if (entry.isIntersecting) {
+    console.log(entry);
     header.classList.remove('sticky');
     hero.style.marginTop = '0';
   }

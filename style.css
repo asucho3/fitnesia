@@ -72,6 +72,7 @@ body {
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -862,19 +863,10 @@ strong {
   }
   .header {
     position: relative;
+    overflow-x: hidden;
   }
-  .nav-links {
-    position: absolute;
-    flex-direction: column;
-
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-
-    height: 50vh;
-    right: 0%;
-    top: 8rem;
-    padding: 4rem 0;
+  .header.visible {
+    overflow-x: visible;
   }
   .toggleMenu {
     display: block;
@@ -884,22 +876,35 @@ strong {
     font-size: 6rem;
     transform: translate(-50%, -50%);
   }
-  .header.visible .nav-links {
-    flex-direction: column;
+  .nav-links {
     position: absolute;
+    flex-direction: column;
+    display: flex;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    right: -20%;
+    top: 8rem;
+
+    width: 100%;
+    padding: 4rem 0;
+  }
+  .header.visible .nav-links {
+    position: absolute;
+    flex-direction: column;
 
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
 
-    left: 50%;
-    top: 8rem;
-    height: 50vh;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
+
     padding: 4rem 0;
 
     background-color: #fff;
-    width: 100vw;
     backdrop-filter: blur(3px);
     background-color: #ffffffb0;
 
