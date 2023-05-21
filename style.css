@@ -400,6 +400,10 @@ strong {
 .workout-title {
   font-weight: 700;
   font-size: 2.4rem;
+  border-left: 0.2rem solid #7bc8ff;
+
+  margin-left: 0.5rem;
+  padding-left: 0.8rem;
 }
 
 .workout-list {
@@ -435,7 +439,7 @@ strong {
   gap: 3.6rem;
 }
 
-.workout:nth-child(even) {
+.workout {
   background-color: #fff;
 }
 
@@ -1014,6 +1018,9 @@ strong {
   .workout {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
     width: 100%;
+  }
+  .workout-title {
+    border-left: 0.4rem solid #7bc8ff;
   }
   .testimonial-container {
   }
