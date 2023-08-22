@@ -1,0 +1,19 @@
+{
+  "name": "fitness-tracker",
+  "description": "![Fitnesia logo](https://fitnesia-asucho3.netlify.app/img/logo.png)",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm run live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asucho3/fitnesia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asucho3/fitnesia/issues"
+  },
+  "homepage": "https://github.com/asucho3/fitnesia#readme"
+}
